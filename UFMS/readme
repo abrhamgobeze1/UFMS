@@ -1,0 +1,57 @@
+academic_staff_management_system/
+│
+├── admin/
+│   ├── admin_dashboard.php        // This file serves as the dashboard for administrators, providing access to various admin functionalities such as managing accounts, viewing requests, and comments.
+│   ├── manage_accounts.php        // This file is responsible for managing user accounts. It allows admins to add, edit, and delete user accounts, ensuring proper user management within the system.
+│   ├── view_requests.php          // This file allows administrators to view various requests submitted by users. It provides a centralized view of all requests for efficient handling and processing.
+│   ├── view_comments.php          // This file enables administrators to view feedback and comments submitted by users. It facilitates communication and feedback management within the system.
+│
+├── employee/
+│   ├── employee_dashboard.php     // This file serves as the dashboard for employees, providing access to functionalities relevant to their roles such as marking attendance, viewing salary details, and applying for leave.
+│   ├── mark_attendance.php        // This file allows employees to mark their daily attendance. It provides a simple interface for employees to log their attendance records.
+│   ├── get_salary.php             // This file enables employees to view their salary details, including salary breakdown and payment history, providing transparency regarding their compensation.
+│   ├── apply_leave.php            // This file facilitates the process of applying for leave by employees. It allows employees to submit leave requests, specifying the duration and reason for their absence.
+│
+├── hr_manager/
+│   ├── hr_dashboard.php           // This file serves as the dashboard for HR managers, providing access to functionalities such as registering employees, managing attendance records, and generating reports.
+│   ├── register_employee.php      // This file allows HR managers to register new employees into the system. It collects necessary information about the employee and adds them to the employee database.
+│   ├── send_request.php           // This file enables HR managers to send requests to other departments or users within the system. It facilitates communication and collaboration between different departments.
+│   ├── create_attendance.php      // This file allows HR managers to create attendance records for employees. It provides tools for tracking employee attendance and managing attendance data.
+│   ├── report_attendance.php      // This file generates attendance reports based on the data collected. It provides insights into employee attendance patterns and helps in monitoring attendance trends.
+│   ├── view_employee_details.php  // This file allows HR managers to view detailed information about employees, including personal details, job roles, and performance metrics.
+│   ├── update_employee_details.php// This file enables HR managers to update employee information as needed. It provides a mechanism for keeping employee records up-to-date.
+│
+├── accountant/
+│   ├── accountant_dashboard.php  // This file serves as the dashboard for accountants, providing access to functionalities such as viewing attendance reports, calculating net salaries, and managing salary data.
+│   ├── view_attendance_report.php// This file allows accountants to view attendance reports of employees. It provides insights into employee attendance patterns and helps in payroll processing.
+│   ├── calculate_net_salary  // This file calculates the net salary of employees based on their attendance records and other factors such as deductions and bonuses.
+│   ├── view_calculated_salary// This file enables accountants to view the calculated salaries of employees before processing. It provides transparency regarding salary calculations.
+│   ├── send_calculated_salary// This file allows accountants to send the calculated salaries for approval. It initiates the process of salary disbursement to employees.
+│
+├── finance_manager/
+│   ├── finance_dashboard.php     // This file serves as the dashboard for finance managers, providing access to functionalities such as viewing calculated salaries and approving salary disbursements.
+│   ├── view_calculated_salary.php// This file enables finance managers to view the calculated salaries of employees. It provides insights into payroll expenses and budget planning.
+│   ├── approve_salary      // This file allows finance managers to approve the calculated salaries for disbursement. It ensures that salaries are processed accurately and on time.
+│
+├── cashier/
+│   ├── cashier_dashboard.php     // This file serves as the dashboard for cashiers, providing access to functionalities such as disbursing salaries in cash to employees.
+│   ├── pay_salary_by_cash.php    // This file facilitates the process of disbursing salaries to employees in cash. It ensures that employees receive their salaries promptly and securely.
+│
+├── includes/
+│   ├── header.php                // This file contains the header section of the application, including navigation links and logo.
+│   ├── footer.php                // This file contains the footer section of the application, including copyright information and contact details.
+│   ├── db_connection.php         // This file establishes a connection to the database, enabling access to the database throughout the application.
+│
+├── css/
+│   ├── style.css                 // This file contains the CSS stylesheet for styling the user interface of the application. It defines the visual appearance of various elements.
+│
+├── js/
+│   ├── script.js                 // This file contains JavaScript code for client-side functionality, enhancing user interactions and providing dynamic behavior to the application.
+│
+├── images/
+│   └── (Directory containing image files) // This directory contains image files used in the application, such as logos, icons, and graphics.
+│
+├── index.php                     // This file serves as the main entry point of the application. It redirects users to the login page for authentication.
+├── login.php                     // This file contains the login page for users to authenticate and access the system.
+├── logout.php                    // This file contains the logout functionality for users to end their session and log out of the system.
+└── config.php                    // This file contains configuration settings for the application, such as database credentials and system constants.
